@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa - Vocabolario Tedesco</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 100px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    .flip-card-front {
+      background: linear-gradient(45deg, #00d4ff, #00ffe7);
+      color: #000;
+    }
+
+    .flip-card-back {
+      background: linear-gradient(45deg, #fff176, #ffff8d);
+      color: #000;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>Vocaboli della Casa</h1>
+  <div class="grid">
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Haus</div>
+        <div class="flip-card-back">casa</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Wohnung</div>
+        <div class="flip-card-back">appartamento</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Zimmer</div>
+        <div class="flip-card-back">stanza</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Flur</div>
+        <div class="flip-card-back">corridoio</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Küche</div>
+        <div class="flip-card-back">cucina</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Badezimmer</div>
+        <div class="flip-card-back">bagno</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Schlafzimmer</div>
+        <div class="flip-card-back">camera da letto</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Wohnzimmer</div>
+        <div class="flip-card-back">soggiorno</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Esszimmer</div>
+        <div class="flip-card-back">sala da pranzo</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Kinderzimmer</div>
+        <div class="flip-card-back">cameretta dei bambini</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Garten</div>
+        <div class="flip-card-back">giardino</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Balkon</div>
+        <div class="flip-card-back">balcone</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Terrasse</div>
+        <div class="flip-card-back">terrazza</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Keller</div>
+        <div class="flip-card-back">cantina</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Dachboden</div>
+        <div class="flip-card-back">soffitta</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Garage</div>
+        <div class="flip-card-back">garage</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Tür</div>
+        <div class="flip-card-back">porta</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Fenster</div>
+        <div class="flip-card-back">finestra</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Wand</div>
+        <div class="flip-card-back">parete</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Boden</div>
+        <div class="flip-card-back">pavimento</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Decke</div>
+        <div class="flip-card-back">soffitto</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Dach</div>
+        <div class="flip-card-back">tetto</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Treppe</div>
+        <div class="flip-card-back">scala</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Lampe</div>
+        <div class="flip-card-back">lampada</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Couch</div>
+        <div class="flip-card-back">divano</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Sofa</div>
+        <div class="flip-card-back">sofà</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Sessel</div>
+        <div class="flip-card-back">poltrona</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Tisch</div>
+        <div class="flip-card-back">tavolo</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Stuhl</div>
+        <div class="flip-card-back">sedia</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Bett</div>
+        <div class="flip-card-back">letto</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Schrank</div>
+        <div class="flip-card-back">armadio</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Regal</div>
+        <div class="flip-card-back">scaffale</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Spiegel</div>
+        <div class="flip-card-back">specchio</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Bild</div>
+        <div class="flip-card-back">quadro</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Teppich</div>
+        <div class="flip-card-back">tappeto</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Vorhang</div>
+        <div class="flip-card-back">tenda</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Gardine</div>
+        <div class="flip-card-back">tenda (più leggera)</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Heizung</div>
+        <div class="flip-card-back">riscaldamento</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Ofen</div>
+        <div class="flip-card-back">forno</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Kühlschrank</div>
+        <div class="flip-card-back">frigorifero</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Spülmaschine</div>
+        <div class="flip-card-back">lavastoviglie</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Waschmaschine</div>
+        <div class="flip-card-back">lavatrice</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Trockner</div>
+        <div class="flip-card-back">asciugatrice</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Waschbecken</div>
+        <div class="flip-card-back">lavandino (bagno)</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Spüle</div>
+        <div class="flip-card-back">lavello (cucina)</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Badewanne</div>
+        <div class="flip-card-back">vasca da bagno</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Dusche</div>
+        <div class="flip-card-back">doccia</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Toilette</div>
+        <div class="flip-card-back">toilette</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Wasserhahn</div>
+        <div class="flip-card-back">rubinetto</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Steckdose</div>
+        <div class="flip-card-back">presa elettrica</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Lichtschalter</div>
+        <div class="flip-card-back">interruttore della luce</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Klingel</div>
+        <div class="flip-card-back">campanello</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Briefkasten</div>
+        <div class="flip-card-back">cassetta della posta</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Klingelschild</div>
+        <div class="flip-card-back">targhetta del campanello</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Zaun</div>
+        <div class="flip-card-back">recinzione</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Tor</div>
+        <div class="flip-card-back">cancello</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Weg</div>
+        <div class="flip-card-back">sentiero</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Auffahrt</div>
+        <div class="flip-card-back">vialetto</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Vorgarten</div>
+        <div class="flip-card-back">giardino anteriore</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Hintergarten</div>
+        <div class="flip-card-back">giardino posteriore</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Blumentopf</div>
+        <div class="flip-card-back">vaso di fiori</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Pflanze</div>
+        <div class="flip-card-back">pianta</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Baum</div>
+        <div class="flip-card-back">albero</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Blume</div>
+        <div class="flip-card-back">fiore</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Gras</div>
+        <div class="flip-card-back">erba</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Rasen</div>
+        <div class="flip-card-back">prato</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Gartentor</div>
+        <div class="flip-card-back">cancelletto del giardino</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Gartenhaus</div>
+        <div class="flip-card-back">casetta da giardino</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Schuppen</div>
+        <div class="flip-card-back">capanno</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Schublade</div>
+        <div class="flip-card-back">cassetto</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Kommode</div>
+        <div class="flip-card-back">cassettiera</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Kleiderschrank</div>
+        <div class="flip-card-back">armadio per i vestiti</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Nachttisch</div>
+        <div class="flip-card-back">comodino</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Matratze</div>
+        <div class="flip-card-back">materasso</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Kissen</div>
+        <div class="flip-card-back">cuscino</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Bettdecke</div>
+        <div class="flip-card-back">coperta</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Laken</div>
+        <div class="flip-card-back">lenzuolo</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Handtuch</div>
+        <div class="flip-card-back">asciugamano</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Föhn</div>
+        <div class="flip-card-back">asciugacapelli</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Bürste</div>
+        <div class="flip-card-back">spazzola</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Kamm</div>
+        <div class="flip-card-back">pettine</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Seife</div>
+        <div class="flip-card-back">sapone</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Shampoo</div>
+        <div class="flip-card-back">shampoo</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Zahnbürste</div>
+        <div class="flip-card-back">spazzolino da denti</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Zahnpasta</div>
+        <div class="flip-card-back">dentifricio</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Mülleimer</div>
+        <div class="flip-card-back">pattumiera</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Besen</div>
+        <div class="flip-card-back">scopa</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Staubsauger</div>
+        <div class="flip-card-back">aspirapolvere</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Eimer</div>
+        <div class="flip-card-back">secchio</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Lappen</div>
+        <div class="flip-card-back">straccio</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Putzmittel</div>
+        <div class="flip-card-back">detersivo</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Wäsche</div>
+        <div class="flip-card-back">bucato</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Wäschekorb</div>
+        <div class="flip-card-back">cesto della biancheria</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Bügelbrett</div>
+        <div class="flip-card-back">asse da stiro</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Bügeleisen</div>
+        <div class="flip-card-back">ferro da stiro</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Schornstein</div>
+        <div class="flip-card-back">camino</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Rauchmelder</div>
+        <div class="flip-card-back">rilevatore di fumo</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Feuermelder</div>
+        <div class="flip-card-back">allarme antincendio</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Schlüssel</div>
+        <div class="flip-card-back">chiave</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Schloss</div>
+        <div class="flip-card-back">serratura</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Der Schlüsselbund</div>
+        <div class="flip-card-back">mazzo di chiavi</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Das Nummernschild</div>
+        <div class="flip-card-back">numero civico</div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Die Markise</div>
+        <div class="flip-card-back">tenda da sole</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

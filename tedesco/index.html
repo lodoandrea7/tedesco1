@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impara il Tedesco</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 50px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 20px 40px;
+      font-size: 1.5em;
+      color: #000; /* Testo nero per contrasto */
+      border: none;
+      border-radius: 15px;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    a.button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4);
+    }
+
+    .rosso {
+      background: linear-gradient(45deg, #ff7b7b, #ffb3b3);
+    }
+
+    .verde {
+      background: linear-gradient(45deg, #a8ff98, #c8ffc8);
+    }
+
+    .giallo {
+      background: linear-gradient(45deg, #fff176, #fff9b0);
+    }
+
+    .azzurro {
+      background: linear-gradient(45deg, #80dfff, #b3f0ff);
+    }
+  </style>
+</head>
+<body>
+  <h1>Benvenuto! Impara il Tedesco</h1>
+  <div class="button-container">
+    <a href="vocabolario.html" class="button rosso">Vocabolario</a>
+    <a href="grammatica.html" class="button verde">Grammatica</a>
+    <a href="esercizi.html" class="button giallo">Esercizi</a>
+    <a href="testi.html" class="button azzurro">Testi</a>
+  </div>
+</body>
+</html>
